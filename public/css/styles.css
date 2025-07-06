@@ -1,0 +1,347 @@
+/* Base Styles & Variables */
+:root {
+  --primary-color: #4361ee;
+  --primary-light: #4895ef;
+  --secondary-color: #3f37c9;
+  --accent-color: #f72585;
+  --success-color: #4cc9f0;
+  --warning-color: #f8961e;
+  --danger-color: #ef233c;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --gray-color: #6c757d;
+  --white: #ffffff;
+  --body-font: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --border-radius: 0.5rem;
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #f5f7fa;
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+
+.text-muted {
+  color: var(--gray-color) !important;
+}
+
+/* Layout & Containers */
+.container {
+  max-width: 1400px;
+  padding: 0 1.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+  background-color: var(--white);
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  background-color: var(--white);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Navigation */
+.navbar {
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  opacity: 0.9;
+}
+
+/* Buttons */
+.btn {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light:hover {
+  color: var(--dark-color);
+}
+
+/* Forms */
+.form-control, .form-select {
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.15);
+}
+
+.input-group-text {
+  background-color: #f1f3f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.table {
+  color: var(--dark-color);
+  margin-bottom: 0;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(67, 97, 238, 0.05);
+}
+
+.table thead th {
+  border-bottom-width: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: var(--gray-color);
+  border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.table > :not(:first-child) {
+  border-top: none;
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 0.35rem 0.65rem;
+  border-radius: 50rem;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-success { background-color: var(--success-color) !important; }
+.bg-info { background-color: #3a86ff !important; }
+.bg-warning { background-color: var(--warning-color) !important; }
+.bg-secondary { background-color: var(--gray-color) !important; }
+
+/* Dashboard Cards */
+.card[class*="bg-"] {
+  color: white;
+}
+
+.card[class*="bg-"] .card-subtitle {
+  opacity: 0.8;
+}
+
+.card[class*="bg-"] i {
+  font-size: 2.5rem;
+  opacity: 0.2;
+  transition: var(--transition);
+}
+
+.card[class*="bg-"]:hover i {
+  opacity: 0.4;
+}
+
+/* Pagination Controls */
+#pageInfo {
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Toast Notifications */
+.toast {
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal Styling */
+.modal-content {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .card-body {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .card-header {
+    padding: 1rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Utility Classes */
+.shadow-sm {
+  box-shadow: var(--box-shadow) !important;
+}
+
+.rounded-xl {
+  border-radius: 1rem !important;
+}
+
+.opacity-50 {
+  opacity: 0.5 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Print Styles */
+@media print {
+  .navbar, .btn, footer {
+    display: none !important;
+  }
+  
+  body {
+    padding: 0;
+    background: none;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid #dee2e6 !important;
+  }
+  
+  table {
+    page-break-inside: auto;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  /* Style for the adjusted income display */
+#averageIncome {
+    position: relative;
+    display: inline-block;
+}
+
+#averageIncome:after {
+    content: "(Total - 2,740,000)";
+    display: block;
+    font-size: 0.6em;
+    opacity: 0.8;
+    margin-top: -0.5em;
+}
+
+.card[class*="bg-"] small {
+    opacity: 0.8;
+    font-size: 0.7em;
+}
+}
