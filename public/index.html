@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body class="bg-transparent">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient shadow">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="bi bi-cash-stack me-2"></i>
-                <span class="fw-bold">Income Records</span>
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#" style="color:rgb(74, 235, 152) !important;">
+            <i class="bi bi-cash-stack me-2"></i>
+            <span class="fw-bold">Azizi Payment Records</span>
+        </a>
+        <div class="d-flex align-items-center">
+            <a href="admin.html" class="btn btn-outline-light btn-sm me-2" style="color:rgb(230, 17, 17) !important; border-color: #b3e0ff !important;">
+                <i class="bi bi-lock"></i> Admin
             </a>
-            <div class="d-flex align-items-center">
-                <a href="admin.html" class="btn btn-outline-light btn-sm me-2">
-                    <i class="bi bi-lock"></i> Admin
-                </a>
-                <button class="btn btn-outline-light btn-sm" onclick="printRecords()">
-                    <i class="bi bi-printer"></i> Print
-                </button>
-            </div>
+            <button class="btn btn-outline-light btn-sm" onclick="printRecords()" style="color:rgb(47, 13, 240) !important; border-color: #b3e0ff !important;">
+                <i class="bi bi-printer"></i> Print
+            </button>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Main Content -->
     <div class="container py-5">
@@ -127,7 +127,7 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <h6 class="card-subtitle mb-2">Remaining Dept</h6>
+                                        <h6 class="card-subtitle mb-2">Deni lililobaki</h6>
                                         <h3 class="card-title mb-0" id="averageIncome">Tsh0.00</h3>
                                     </div>
                                     <i class="bi bi-graph-up fs-1 opacity-50"></i>
