@@ -1051,5 +1051,160 @@
     "category": "Other",
     "createdAt": "2025-07-06T09:24:57.416Z",
     "updatedAt": "2025-07-06T09:24:57.416Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-001",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-22",
+    "category": "Other",
+    "createdAt": "2025-07-22T09:00:00.000Z",
+    "updatedAt": "2025-07-22T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-002",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-21",
+    "category": "Salary",
+    "createdAt": "2025-07-21T09:00:00.000Z",
+    "updatedAt": "2025-07-21T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-003",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-20",
+    "category": "Salary",
+    "createdAt": "2025-07-20T09:00:00.000Z",
+    "updatedAt": "2025-07-20T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-004",
+    "description": "full payment",
+    "amount": 20000,
+    "date": "2025-07-19",
+    "category": "Salary",
+    "createdAt": "2025-07-19T09:00:00.000Z",
+    "updatedAt": "2025-07-19T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-005",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-18",
+    "category": "Salary",
+    "createdAt": "2025-07-18T09:00:00.000Z",
+    "updatedAt": "2025-07-18T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-006",
+    "description": "full payment",
+    "amount": 30000,
+    "date": "2025-07-17",
+    "category": "Salary",
+    "createdAt": "2025-07-17T09:00:00.000Z",
+    "updatedAt": "2025-07-17T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-007",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-16",
+    "category": "Salary",
+    "createdAt": "2025-07-16T09:00:00.000Z",
+    "updatedAt": "2025-07-16T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-008",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-15",
+    "category": "Salary",
+    "createdAt": "2025-07-15T09:00:00.000Z",
+    "updatedAt": "2025-07-15T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-009",
+    "description": "full payment",
+    "amount": 30000,
+    "date": "2025-07-14",
+    "category": "Salary",
+    "createdAt": "2025-07-14T09:00:00.000Z",
+    "updatedAt": "2025-07-14T09:00:00.000Z"
+  },
+  {
+    "_id": "b1014fd2-1a2c-42ea-b31c-010",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-13",
+    "category": "Salary",
+    "createdAt": "2025-07-13T09:00:00.000Z",
+    "updatedAt": "2025-07-13T09:00:00.000Z"
+  },
+  
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0001",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-07",
+    "category": "Salary",
+    "createdAt": "2025-07-07T09:00:00.000Z",
+    "updatedAt": "2025-07-07T09:00:00.000Z"
+  },
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0002",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-08",
+    "category": "Salary",
+    "createdAt": "2025-07-08T09:00:00.000Z",
+    "updatedAt": "2025-07-08T09:00:00.000Z"
+  },
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0003",
+    "description": "full payment",
+    "amount": 30000,
+    "date": "2025-07-09",
+    "category": "Salary",
+    "createdAt": "2025-07-09T09:00:00.000Z",
+    "updatedAt": "2025-07-09T09:00:00.000Z"
+  },
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0004",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-10",
+    "category": "Salary",
+    "createdAt": "2025-07-10T09:00:00.000Z",
+    "updatedAt": "2025-07-10T09:00:00.000Z"
+  },
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0005",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-11",
+    "category": "Salary",
+    "createdAt": "2025-07-11T09:00:00.000Z",
+    "updatedAt": "2025-07-11T09:00:00.000Z"
+  },
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0006",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-12",
+    "category": "Salary",
+    "createdAt": "2025-07-12T09:00:00.000Z",
+    "updatedAt": "2025-07-12T09:00:00.000Z"
+  },
+  {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0007",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-13",
+    "category": "Salary",
+    "createdAt": "2025-07-13T09:00:00.000Z",
+    "updatedAt": "2025-07-13T09:00:00.000Z"
   }
+  
 ]
