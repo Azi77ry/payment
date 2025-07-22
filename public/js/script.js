@@ -565,3 +565,81 @@ function downloadBackup() {
             showToast('Error creating backup', 'danger');
         });
 }
+// Add this function to handle printing all records
+function printAllRecords() {
+    // Fetch all records without pagination
+    fetch('/api/records?limit=all')
+        .then(response => response.json())
+        .then(records => {
+            // Create a print-friendly HTML template
+            const printContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Income Records - Full Report</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        h1 { color: #333; text-align: center; }
+                        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                        th { background-color: #f2f2f2; }
+                        .summary { margin-top: 30px; padding: 15px; background-color: #f9f9f9; }
+                        .date { text-align: right; margin-bottom: 20px; }
+                    </style>
+                </head>
+                <body>
+                    <h1>Income Records Report</h1>
+                    <div class="date">Generated on: ${new Date().toLocaleDateString()}</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Amount (Tsh)</th>
+                                <th>Date</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${records.map(record => `
+                                <tr>
+                                    <td>${record.description}</td>
+                                    <td>${record.amount.toLocaleString()}</td>
+                                    <td>${new Date(record.date).toLocaleDateString()}</td>
+                                    <td>${record.category}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                    <div class="summary">
+                        <h3>Summary</h3>
+                        <p>Total Records: ${records.length}</p>
+                        <p>Total Amount: Tsh ${records.reduce((sum, r) => sum + r.amount, 0).toLocaleString()}</p>
+                    </div>
+                </body>
+                </html>
+            `;
+
+            // Open print window
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(printContent);
+            printWindow.document.close();
+            printWindow.focus();
+            
+            // Wait for content to load before printing
+            printWindow.onload = function() {
+                setTimeout(() => {
+                    printWindow.print();
+                    printWindow.close();
+                }, 500);
+            };
+        })
+        .catch(error => {
+            console.error('Error fetching records for printing:', error);
+            alert('Failed to load records for printing');
+        });
+}
+
+// Update your existing printRecords function or replace it with:
+function printRecords() {
+    printAllRecords(); // Now printing all records instead of current page
+}

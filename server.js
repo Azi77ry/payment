@@ -52,9 +52,10 @@ function writeRecords(records) {
 }
 
 // API Routes
-app.get('/api/records', (req, res) => {
+// Modify your GET /api/records endpoint
+app.get('/api/records', async (req, res) => {
     try {
-        let records = readRecords();
+        let records = await readRecords();
         
         // Apply filtering
         const filter = req.query.filter;
@@ -77,6 +78,11 @@ app.get('/api/records', (req, res) => {
             case 'amount-desc':
                 records.sort((a, b) => b.amount - a.amount);
                 break;
+        }
+
+        // Check if client requested all records (no pagination)
+        if (req.query.limit === 'all') {
+            return res.json(records);
         }
         
         res.json(records);
