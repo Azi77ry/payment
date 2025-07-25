@@ -5,6 +5,13 @@ The **Income Records Management System** is a web application designed to track 
 
 ---
 
+**Click here to view the website:**
+
+```
+https://malipo-bodaboda.onrender.com
+
+```
+
 ## Features
 
 ### ✅ User View
