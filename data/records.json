@@ -1204,5 +1204,41 @@
     "category": "Salary",
     "createdAt": "2025-07-13T09:00:00.000Z",
     "updatedAt": "2025-07-13T09:00:00.000Z"
+  },
+   {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0007",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-23",
+    "category": "Salary",
+    "createdAt": "2025-07-13T09:00:00.000Z",
+    "updatedAt": "2025-07-13T09:00:00.000Z"
+  },
+   {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0007",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-24",
+    "category": "Salary",
+    "createdAt": "2025-07-13T09:00:00.000Z",
+    "updatedAt": "2025-07-13T09:00:00.000Z"
+  },
+   {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0007",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-25",
+    "category": "Salary",
+    "createdAt": "2025-07-13T09:00:00.000Z",
+    "updatedAt": "2025-07-13T09:00:00.000Z"
+  },
+   {
+    "_id": "5f1e2b1a-aaa1-4d02-a707-0007",
+    "description": "no payment",
+    "amount": 0,
+    "date": "2025-07-22",
+    "category": "Salary",
+    "createdAt": "2025-07-13T09:00:00.000Z",
+    "updatedAt": "2025-07-13T09:00:00.000Z"
   }
 ]
